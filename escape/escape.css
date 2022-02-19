@@ -1,0 +1,70 @@
+header {
+    display: flex;
+    justify-content: center;
+    /* код для картинки */
+    /* Местоположение фоновой картинки */
+    background-image: url(assets/images/header.svg);
+    /* Фоновое изображение выровнено по центру в горизонтальной и вертикальной плоскостях */
+    background-position: center center;
+    /* Фон не повторяется */
+    background-repeat: no-repeat;
+    /* Фон зафиксирован в области просмотра и потому не двигается, когда высота контента превышает высоту изображения */
+    background-attachment: fixed;
+    /* Это свойство заставляет фон менять масштаб при изменении размеров содержащего его контейнера*/
+    background-size: cover;
+    /* Цвет фона, который будет отображаться при загрузке фоновой картинки*/
+    background-color: #F7F7F7;
+}
+.content {
+    width: 80%;
+}
+.header {
+    display: flex;
+}
+.flex-container-nav {
+    display: inline-flex;
+    justify-content: flex-end;
+    flex-grow: 2;
+}
+#logo {
+    margin: 40px;
+    flex-grow: 1;
+    color: #FFFFFF;
+    font-family: 'Lora', serif;
+    text-align: center;
+    font-size: 26px;
+}
+.nav-item {
+    margin: 40px;
+    font-family: 'Oxygen', sans-serif;
+}
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.header-main {
+    text-align: center;
+    padding: 150px;
+    font-weight: 400;
+}
+#header-main-1 {
+    color: #FFFFFF;
+    font-family: 'Lora', serif;
+    letter-spacing: 2px;
+    font-size: 50px;
+    line-height: 51px;
+    margin-bottom: 0%;
+}
+#header-main-2 {
+    color: #FFFFFF;
+    opacity: 0.63;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 17px;
+}
+#View-Latest-Posts {
+    background-color: #DD783F;
+    color: #FFFFFF;
+    font-family: 'Oxygen', sans-serif;
+    text-align: center;
+    padding: 10px 30px 20px 30px;
+}
