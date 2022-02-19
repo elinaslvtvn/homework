@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(237, 223, 252);
+    font-family: 'Calibri', sans-serif;
+    font-size: small;
+}
+header {
+    background-color: rgb(237, 223, 252);
+    display: flex;
+    justify-content: center;
+}
+.main {
+    background-color: rgb(233, 203, 165);
+    flex-grow: 3;
+    text-align: center;
+}
+.flex-container-main {
+    display: flex;
+}
+.more {
+    background-color: rgb(231, 180, 114);
+    margin: 2%;
+}
+.flex-container-more {
+    display: flex;
+    flex-wrap: wrap;
+}
+#more1, #more2{
+    width: 46%;
+}
+#more3 {
+    width: 100%;
+}
+.aside {
+    background-color: rgb(165, 212, 171);
+    flex-grow: 1;
+    text-align: center;
+}
+.footer {
+    background-color: aliceblue;
+    padding: 15px;
+}
+.flex-container-footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+}
