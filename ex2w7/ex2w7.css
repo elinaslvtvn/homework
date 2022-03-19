@@ -1,0 +1,113 @@
+/* Декстоп и планшет */
+@media screen and (min-width: 768px) {
+    .header-container {
+        display: grid;
+        grid-template-columns: 1fr 10% 1fr;
+    }
+}
+/* фон. планшет и смартфон */
+@media (min-width: 0px) and (max-width: 1023px) {
+    body {
+        justify-content: center;
+        /* код для картинки */
+        /* Местоположение фоновой картинки */
+        background-image: url(assets/images/background768and320px.svg);
+        /* Фоновое изображение выровнено по центру в горизонтальной и вертикальной плоскостях */
+        background-position: center center;
+        /* Фон не повторяется */
+        background-repeat: no-repeat;
+        /* Фон зафиксирован в области просмотра и потому не двигается, когда высота контента превышает высоту изображения */
+        background-attachment: fixed;
+        /* Это свойство заставляет фон менять масштаб при изменении размеров содержащего его контейнера*/
+        background-size: cover;
+        color: white;
+    }
+}
+/* фон. Декстоп */
+@media screen and (min-width: 1024px) {
+    body {
+        justify-content: center;
+        /* код для картинки */
+        /* Местоположение фоновой картинки */
+        background-image: url(assets/images/background1024px.svg);
+        /* Фоновое изображение выровнено по центру в горизонтальной и вертикальной плоскостях */
+        background-position: center center;
+        /* Фон не повторяется */
+        background-repeat: no-repeat;
+        /* Фон зафиксирован в области просмотра и потому не двигается, когда высота контента превышает высоту изображения */
+        background-attachment: fixed;
+        /* Это свойство заставляет фон менять масштаб при изменении размеров содержащего его контейнера*/
+        background-size: cover;
+        color: white;
+    }
+}
+/* Смартфон */
+@media (min-width: 0px) and (max-width: 767px) {
+    .header-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .right_header {
+        display: none;
+    }
+}
+/* общее */
+.container {
+    display: grid;
+    width: 100vw;
+    grid-template-rows: 1fr 5fr;
+    justify-items: stretch;
+    margin: 2%;
+}
+.header-container {
+    grid-column: 1/2;
+    height: 10vh;
+}
+.main {
+    grid-column: 1/2;
+}
+#geolocation_picture {
+    height: 5%;
+}
+.header_picture {
+    height: 5%;
+    width: 5vh;
+    margin: 5px;
+}
+.phone {
+    color: white;
+    text-decoration: none;
+    font-family: 'Jura', sans-serif;
+}
+.left_header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+.logo {
+    text-align: center;
+}
+.right_header {
+    text-align: center;
+}
+.text1 {
+    font-family: 'Jura', sans-serif;
+    margin: 5%;
+    font-size: 2em;
+}
+.text2 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 5%;
+    font-size: 1em;
+}
+.more_button {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 5%;
+    padding: 2vh;
+    font-size: 1em;
+    border-radius: 20px;
+    border-color: red;
+    color: white;
+    background-image: none;
+    background: transparent;
+}
